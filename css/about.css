@@ -1,0 +1,381 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* html {
+    scroll-behavior: smooth;
+} */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333333;
+    background-color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.3s ease;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.header {
+    background: #ffffff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+.logo a {
+    font-size: 24px;
+    font-weight: 700;
+    color: #004aad;
+}
+
+.logo span {
+    color: #ff4d4d;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    font-weight: 500;
+}
+
+.nav-links a:hover {
+    color: #004aad;
+}
+
+.btn-book {
+    background: #ff4d4d;
+    color: #ffffff;
+    padding: 8px 18px;
+    border-radius: 5px;
+}
+
+.btn-book:hover {
+    background: #e60000;
+}
+
+/* ABOUT HERO */
+
+.about-hero{
+    height: 60vh;
+/* padding:120px 0 80px; */
+background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+        url(../img/about.avif);
+background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #ffffff;
+    padding-top: 80px;
+color:white;
+text-align:center;
+}
+
+.about-hero h1 {
+    font-size: 62px;
+    color: #f3f5f7;
+    margin-bottom: 15px;
+}
+
+.about-hero p {
+    color: white;
+    margin-bottom: 25px;
+}
+
+/* STORY */
+
+.about-story{
+padding:100px 0;
+background:#f8f9fa;
+}
+
+.about-story-container{
+display:flex;
+gap:50px;
+align-items:center;
+}
+
+.story-content ul li{
+margin:10px 0;
+}
+
+.story-content i{
+color:#004aad;
+margin-right:8px;
+}
+
+/* MISSION */
+
+.mission-section{
+padding:80px 0;
+background:rgb(185, 183, 183);
+}
+
+.mission-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+}
+
+.mission-card{
+text-align:center;
+padding:30px;
+background:#f8f9fa;
+border-radius:8px;
+}
+
+.mission-card i{
+font-size:35px;
+color:#004aad;
+margin-bottom:15px;
+}
+
+/* WHY */
+
+.why-section{
+padding:100px 0;
+}
+.section-title{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-title h2{
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.section-title p{
+    font-size: 16px;
+    color: #666;
+    max-width: 600px;
+    margin: auto;
+}
+
+.why-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+margin-top:40px;
+}
+
+.why-card{
+background:#aaadaf;
+padding:30px;
+text-align:center;
+border-radius:8px;
+}
+
+.why-card i{
+    font-size:32px;
+    color:#004aad;
+    margin-bottom:12px;
+    transition:0.3s;
+}
+.why-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 8px 20px rgba(0,0,0,0.15);
+}
+
+.why-card:hover i{
+    color:#ff6600;
+}
+
+/* STATS */
+
+.stats-section{
+/* background:#004aad; */
+/* color:white; */
+    padding:80px 0;
+    height: 40vh;
+/* padding:120px 0 80px; */
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+        url(../img/photo-1502877338535-766e1452684a.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #ffffff;
+    padding-top: 80px;
+    text-align:center;
+}
+
+.stats-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+text-align:center;
+gap:20px;
+}
+
+.stat-box h2{
+font-size:40px;
+}
+
+/* TEAM */
+
+.team-section{
+padding:100px 0;
+background:#f8f9fa;
+}
+
+.team-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+margin-top:40px;
+}
+
+.team-card{
+text-align:center;
+background:#fff;
+padding:20px;
+border-radius:8px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.team-card img{
+border-radius:8px;
+margin-bottom:15px;
+}
+
+/* CTA */
+
+.about-cta{
+    /* background:#004aad; */
+/* color:white; */
+    padding:80px 0;
+    height: 60vh;
+/* padding:120px 0 80px; */
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+        url(../img/photo-1502877338535-766e1452684a.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #ffffff;
+    padding-top: 80px;
+    text-align:center;
+}
+.about-cta h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.about-cta p {
+    max-width: 600px;
+    margin: 0 auto 25px;
+}
+.btn-primary {
+    background: #004aad;
+    /* margin-top: 80px; */
+    padding: 12px 25px;
+    border-radius: 5px;
+    color: #ffffff;
+}
+
+.btn-primary:hover {
+    background: #ff4d4d;
+}
+
+   /* FOOTER */
+.footer {
+    background: #1a1a2e;
+    color: #ffffff;
+    padding: 60px 0 20px;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+}
+
+.footer-logo span {
+    color: #ff4d4d;
+}
+
+.footer-column h3 {
+    margin-bottom: 15px;
+}
+
+.footer-column ul li {
+    margin-bottom: 8px;
+}
+
+.footer-column a:hover {
+    color: #ff4d4d;
+}
+
+.social-links a {
+    margin-right: 10px;
+    color: #ffffff;
+    font-size: 18px;
+}
+
+.newsletter-form {
+    display: flex;
+}
+
+.newsletter-form input {
+    flex: 1;
+    padding: 8px;
+    border: none;
+    border-radius: 4px 0 0 4px;
+}
+
+.newsletter-form button {
+    padding: 8px 12px;
+    background: #ff4d4d;
+    border: none;
+    color: #ffffff;
+    border-radius: 0 4px 4px 0;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    border-top: 1px solid #333;
+    padding-top: 15px;
+    font-size: 14px;
+}
